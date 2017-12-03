@@ -40,7 +40,7 @@ function touchMoved()
     print("go right");
   }
 }*/
-
+button1 = createButton('UP');
 function draw() {
   background(51, 51, 51);
   track.drawTrack();
@@ -49,8 +49,6 @@ function draw() {
   var brakey=window.innerHeight/2;
   var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
   var gasy=window.innerHeight/2;
-
-    button1 = createButton('UP');
     button1.position(gasx-10, gasy-(gasy/10));
     button1.size(50,50);
     button1.mousepressed(upp);
