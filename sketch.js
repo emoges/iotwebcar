@@ -9,13 +9,13 @@ function setup() {
   safeMode = false;
   frameRate(fr);
 }
-var brakex=(window.innerWidth - track.outerWidth)/4;
-var brakey=window.innerHeight/2;
-var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
-var gasy=window.innerHeight/2;
 
 function touchStarted()
 {
+  var brakex=(window.innerWidth - track.outerWidth)/4;
+  var brakey=window.innerHeight/2;
+  var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
+  var gasy=window.innerHeight/2;
 //right button  ex//window.innerWidth-gasx+20
 //right button  sx//gasx+20
 //right button  sy//gasy-40
@@ -44,7 +44,10 @@ function draw() {
   background(51, 51, 51);
   track.drawTrack();
   //print("Window width: "+window.innerWidth+" Track outer width: "+track.outerWidth);
-
+  var brakex=(window.innerWidth - track.outerWidth)/4;
+  var brakey=window.innerHeight/2;
+  var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
+  var gasy=window.innerHeight/2;
   if (safeMode === false) {
     me.update();
     me.show();
