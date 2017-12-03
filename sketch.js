@@ -12,7 +12,7 @@ function setup() {
 
 function touchStarted()
 {
-  print("touch x: "+touchX);
+  print("touch x: "+mouseX+" touchy: "+mouseY+"touchXXX: "+pmouseX);
 }
 
 function draw() {
