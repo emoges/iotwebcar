@@ -51,12 +51,10 @@ function draw() {
   var gasy=window.innerHeight/2;
 
     button1 = createButton('UP');
-    button1.position(gasx-10, gasy-10);
+    button1.position(gasx-10, gasy-(gasy/10));
+    button1.size(50,50);
     button1.mousePressed(upp);
 
-    /*button2 = createButton('LEFT');
-    button2.position(gasx-10, gasy-10);
-    button2.mousePressed(me.dir(0, -.2));*/
 
   if (safeMode === false) {
     me.update();
