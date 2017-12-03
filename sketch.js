@@ -15,10 +15,10 @@ function draw() {
   track.drawTrack();
   print("Window width: "+window.innerWidth+" Track outer width: "+track.outerWidth);
 
-  var brakex=(window.innerWidth - track.outerWidth)/2;
-  var brakey=10;
-  var gasx=20;
-  var gasy=20;
+  var brakex=(window.innerWidth - track.outerWidth)/4;
+  var brakey=window.innerHeight;
+  var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth;
+  var gasy=window.innerHeight;
 
   if (safeMode === false) {
     me.update();
