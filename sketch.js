@@ -13,9 +13,9 @@ function setup() {
 function draw() {
   background(51, 51, 51);
   track.drawTrack();
-  print("Window width: "+window.innerWidth+" Track outer width: "+track.outerwidth);
-  
-  var brakex=(window.innerWidth - track.outerwidth)/2;
+  print("Window width: "+window.innerWidth+" Track outer width: "+track.outerWidth);
+
+  var brakex=(window.innerWidth - track.outerWidth)/2;
   var brakey=10;
   var gasx=20;
   var gasy=20;
