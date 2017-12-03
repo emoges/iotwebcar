@@ -8,6 +8,7 @@ function setup() {
   currentTheta = 0;
   safeMode = false;
   frameRate(fr);
+  button1 = createButton('UP');
 }
 
 /*function touchStarted()
@@ -40,7 +41,6 @@ function touchMoved()
     print("go right");
   }
 }*/
-button1 = createButton('UP');
 function draw() {
   background(51, 51, 51);
   track.drawTrack();
