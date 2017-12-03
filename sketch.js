@@ -53,7 +53,7 @@ function draw() {
     button1 = createButton('UP');
     button1.position(gasx-10, gasy-(gasy/10));
     button1.size(50,50);
-    button1.mousePressed(upp);
+    button1.mouseIsPressed(upp);
 
 
   if (safeMode === false) {
