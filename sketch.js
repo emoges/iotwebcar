@@ -52,7 +52,7 @@ function draw() {
 
     button1 = createButton('UP');
     button1.position(gasx-10, gasy-10);
-    button1.mousePressed(me.dir(0, -.2));
+    button1.mousePressed(upp);
 
     /*button2 = createButton('LEFT');
     button2.position(gasx-10, gasy-10);
@@ -98,5 +98,10 @@ function draw() {
     me.calcSpeed();
     me.safemode();
     me.show();
+  }
+
+  function upp()
+  {
+    me.dir(0, -.2);
   }
 }
