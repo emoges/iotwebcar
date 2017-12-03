@@ -32,7 +32,8 @@ function touchStarted()
     print("pmX: "+pmouseX);
     print("ttttt:  "+gasx+20);
     var testervari=window.innerWidth;
-    print("ttttt:  "+testervari-(gasx+20));
+    //print("ttttt:  "+testervari-(gasx+20));
+    print("ttttt:  "+testervari);
     print(gasx+20+"  "+pmouseX+"  "+window.innerWidth-gasx+20)
     print("go right");
   }
