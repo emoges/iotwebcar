@@ -17,7 +17,7 @@ function draw() {
 
   var brakex=(window.innerWidth - track.outerWidth)/4;
   var brakey=window.innerHeight/2;
-  var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth;
+  var gasx=window.innerWidth;
   var gasy=window.innerHeight/2;
 
   if (safeMode === false) {
