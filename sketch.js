@@ -22,7 +22,7 @@ function touchStarted()
 //right button  sy//gasy-40
 //right button  ey//gasy+60
 
-//left button  sx//(window.innerWidth-(2*(gasx+20)))
+//left button  sx//gasx-(window.innerWidth-(gasx+20))
 //left button  ex//gasx
 //left button  sy//gasy-40
 //left button  ey//gasy+60
@@ -31,9 +31,9 @@ if(gasx+20<pmouseX<(window.innerWidth-(gasx+20)) && gasy+60<pmouseY<gasy-40)
   print("go right "+(window.innerWidth-(gasx+20)));
   me.dir(.2, 0);
 }
-else if((window.innerWidth-(2*(gasx+20)))<pmouseX<gasx && gasy+60<pmouseY<gasy-40)
+else if(gasx-(window.innerWidth-(gasx+20))<pmouseX<gasx && gasy+60<pmouseY<gasy-40)
 {
-  print("go left "+(window.innerWidth-(2*(gasx+20))));
+  print("go left "+gasx-(window.innerWidth-(gasx+20));
   me.dir(-.2, 0);
 }
 
@@ -49,9 +49,9 @@ function touchMoved()
     print("go right "+(window.innerWidth-(gasx+20)));
     me.dir(.2, 0);
   }
-  else if((window.innerWidth-(2*(gasx+20)))<pmouseX<gasx && gasy+60<pmouseY<gasy-40)
+  else if(gasx-(window.innerWidth-(gasx+20))<pmouseX<gasx && gasy+60<pmouseY<gasy-40)
   {
-    print("go left "+(window.innerWidth-(2*(gasx+20))));
+    print("go left "+gasx-(window.innerWidth-(gasx+20));
     me.dir(-.2, 0);
   }
 }
