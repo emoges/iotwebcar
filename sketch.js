@@ -14,6 +14,10 @@ function touchStarted()
 {
   print("touch x: "+mouseX+" touchy: "+mouseY+"touchXXX: "+pmouseX);
 }
+function touchMoved()
+{
+
+}
 
 function draw() {
   background(51, 51, 51);
