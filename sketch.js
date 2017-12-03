@@ -3,7 +3,6 @@ function setup() {
   me = new Car(255, 255, 255); //car
   track = new Track(); //track
   brake = loadImage("img/brakev2.png");
-  image(brake, window.innerWidth/2 + 10, 0, 20, 20);
   gas = loadImage("img/gasv2.png");
   fr = 30; //frameRate
   currentTheta = 0;
@@ -14,7 +13,7 @@ function setup() {
 function draw() {
   background(51, 51, 51);
   track.drawTrack();
-  var brakex=10;
+  var brakex=(window.innerWidth - track.outerwidth)/2;
   var brakey=10;
   var gasx=20;
   var gasy=20;
