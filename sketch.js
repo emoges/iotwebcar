@@ -1,3 +1,8 @@
+var brakex=(window.innerWidth - track.outerWidth)/4;
+var brakey=window.innerHeight/2;
+var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
+var gasy=window.innerHeight/2;
+
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight); //bg
    track = new Track(); //track
@@ -12,22 +17,34 @@ function setup() {
 
 function touchStarted()
 {
-  print("touch x: "+mouseX+" touchy: "+mouseY+"touchXXX: "+pmouseX);
+//right button  ex//window.innerWidth-gasx+20
+//right button  sx//gasx+20
+//right button  sy//gasy-40
+//right button  ey//gasy+40
+
+//left button  ex//window.innerWidth-gasx+20
+//left button  sx//gasx+20
+//left button  sy//gasy-40
+//left button  ey//gasy+40
+  if(gasx+20<mouseX<window.innerWidth-gasx+20 && gasy+60<mouseY<gasy-40)
+  {
+    print("go right");
+  }
+
+
 }
 function touchMoved()
 {
-
+  if(gasx+20<mouseX<window.innerWidth-gasx+20 && gasy+60<mouseY<gasy-40)
+  {
+    print("go right");
+  }
 }
 
 function draw() {
   background(51, 51, 51);
   track.drawTrack();
   //print("Window width: "+window.innerWidth+" Track outer width: "+track.outerWidth);
-
-  var brakex=(window.innerWidth - track.outerWidth)/4;
-  var brakey=window.innerHeight/2;
-  var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
-  var gasy=window.innerHeight/2;
 
   if (safeMode === false) {
     me.update();
