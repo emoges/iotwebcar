@@ -51,7 +51,7 @@ function draw() {
   var gasy=window.innerHeight/2;
     button1.position(gasx-10, gasy-(gasy/10));
     button1.size(50,50);
-    button1.mousepressed(upp);
+    button1.mousePressed(upp);
 
 
   if (safeMode === false) {
