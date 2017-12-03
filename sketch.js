@@ -29,6 +29,7 @@ function touchStarted()
 if(gasx+20<pmouseX<(window.innerWidth-(gasx+20)) && gasy+60<pmouseY<gasy-40)
 {
   print("go right "+(window.innerWidth-(gasx+20)));
+    print("go left "+gasx-(window.innerWidth-(gasx+20)));
   me.dir(.2, 0);
 }
 else if(gasx-(window.innerWidth-(gasx+20))<pmouseX<gasx && gasy+60<pmouseY<gasy-40)
@@ -47,6 +48,7 @@ function touchMoved()
   if(gasx+20<pmouseX<(window.innerWidth-(gasx+20)) && gasy+60<pmouseY<gasy-40)
   {
     print("go right "+(window.innerWidth-(gasx+20)));
+      print("go left "+gasx-(window.innerWidth-(gasx+20)));
     me.dir(.2, 0);
   }
   else if(gasx-(window.innerWidth-(gasx+20))<pmouseX<gasx && gasy+60<pmouseY<gasy-40)
