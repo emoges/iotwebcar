@@ -10,6 +10,11 @@ function setup() {
   frameRate(fr);
 }
 
+function(touchStarted())
+{
+  print("touch x: "+touch.x);
+}
+
 function draw() {
   background(51, 51, 51);
   track.drawTrack();
@@ -34,11 +39,6 @@ function draw() {
     }
     if (keyIsDown(LEFT_ARROW)) {
       me.dir(-.2, 0);
-    }
-
-    if(touchStarted())
-    {
-      print("touch x: "+touch.x);
     }
 
     if (keyIsDown(82) || keyIsDown(114)) { //r for reset
