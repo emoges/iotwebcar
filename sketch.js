@@ -14,6 +14,10 @@ function setup() {
 function draw() {
   background(51, 51, 51);
   track.drawTrack();
+  var brakex=10;
+  var brakey=10;
+  var gasx=20;
+  var gasy=20;
 
   if (safeMode === false) {
     me.update();
@@ -37,15 +41,15 @@ function draw() {
 
     if (keyIsDown(88) || keyIsDown(120)) { //x for brake
       me.deccelerate();
-      image(brake, window.innerWidth/2 + + Track.outerWidth +20, 0, 20, 20); //make brake smaller, appear depressed
+      image(brake, brakex, brakey, 20, 20); //make brake smaller, appear depressed
     } else {
-      image(brake, window.innerWidth/2 + + Track.outerWidth +20, 0, 20, 20);
+      image(brake, brakex, brakey, 20, 20);
     }
 
     if (keyIsDown(UP_ARROW) || keyIsDown(DOWN_ARROW) || keyIsDown(LEFT_ARROW) || keyIsDown(RIGHT_ARROW)) {
-      image(gas, window.innerWidth/4, window.innerHeight/4, 20, 20);//make gas smaller, appear depressed
+      image(gas, gasx, gasy, 20, 20);//make gas smaller, appear depressed
     } else {
-      image(gas, window.innerWidth/4, window.innerHeight/4, 20, 20);
+      image(gas, gasx, gasy, 20, 20);
     }
 
     if (!track.isOnTrack(me.x, me.y, me.radius)) {
