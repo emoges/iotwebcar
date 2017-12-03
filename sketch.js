@@ -27,14 +27,7 @@ function touchStarted()
 //left button  ey//gasy+40
   if(gasx+20<pmouseX<window.innerWidth-gasx+20 && gasy+60<pmouseY<gasy-40)
   {
-    print("gasx: "+gasx);
-    print("windW: "+window.innerWidth);
-    print("pmX: "+pmouseX);
-    print("tt1:  "+gasx+20);
-    var testervari=window.innerWidth;
-    //print("ttttt:  "+testervari-(gasx+20));
-    print("ttttt:  "+(testervari+1));
-    print(gasx+20+"  "+pmouseX+"  "+window.innerWidth-gasx+20)
+    print(gasx+20+"  "+pmouseX+"  "+(window.innerWidth-gasx+20))
     print("go right");
   }
 
