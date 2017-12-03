@@ -10,9 +10,9 @@ function setup() {
   frameRate(fr);
 }
 
-function touchStarted()
+/*function touchStarted()
 {
-  /*var brakex=(window.innerWidth - track.outerWidth)/4;
+  var brakex=(window.innerWidth - track.outerWidth)/4;
   var brakey=window.innerHeight/2;
   var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
   var gasy=window.innerHeight/2;
@@ -24,13 +24,13 @@ function touchStarted()
 //left button  ex//window.innerWidth-gasx+20
 //left button  sx//gasx+20
 //left button  sy//gasy-40
-//left button  ey//gasy+40*/
+//left button  ey//gasy+40
 
 
 }
 function touchMoved()
 {
-  /*var brakex=(window.innerWidth - track.outerWidth)/4;
+  var brakex=(window.innerWidth - track.outerWidth)/4;
   var brakey=window.innerHeight/2;
   var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
   var gasy=window.innerHeight/2;
@@ -38,8 +38,8 @@ function touchMoved()
   {
     print(gasx+20+"  "+pmouseX+"  "+window.innerWidth-gasx+20)
     print("go right");
-  }*/
-}
+  }
+}*/
 
 function draw() {
   background(51, 51, 51);
