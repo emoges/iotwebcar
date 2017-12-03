@@ -26,6 +26,8 @@ function touchStarted()
 //left button  ex//gasx
 //left button  sy//gasy-40
 //left button  ey//gasy+60
+print("go right "+(window.innerWidth-(gasx+20)));
+print("go left "+(gasx-(window.innerWidth-(gasx+20))));
 if(gasx+20<pmouseX<(window.innerWidth-(gasx+20)) && gasy+60<pmouseY<gasy-40)
 {
   print("go right "+(window.innerWidth-(gasx+20)));
@@ -44,6 +46,8 @@ function touchMoved()
   var brakey=window.innerHeight/2;
   var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
   var gasy=window.innerHeight/2;
+  print("go right "+(window.innerWidth-(gasx+20)));
+  print("go left "+(gasx-(window.innerWidth-(gasx+20))));
   if(gasx+20<pmouseX<(window.innerWidth-(gasx+20)) && gasy+60<pmouseY<gasy-40)
   {
     print("go right "+(window.innerWidth-(gasx+20)));
