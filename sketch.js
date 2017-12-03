@@ -10,7 +10,7 @@ function setup() {
   frameRate(fr);
 }
 
-function(touchStarted())
+function touchStarted()
 {
   print("touch x: "+touch.x);
 }
