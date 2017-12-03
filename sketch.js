@@ -98,9 +98,12 @@ function draw() {
 
   function upp()
   {
-    while (button1.mouseIsPressed==true)
+    print("im here");
+    while (button1.mouseIsPressed)
     {
+      print("yes");
       me.dir(0, -.2);
     }
+    print("done");
   }
 }
