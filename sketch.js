@@ -13,7 +13,7 @@ function setup() {
 function draw() {
   background(51, 51, 51);
   track.drawTrack();
-  print("Window width: "+window.innerWidth+" Track outer width: "+track.outerWidth);
+  //print("Window width: "+window.innerWidth+" Track outer width: "+track.outerWidth);
 
   var brakex=(window.innerWidth - track.outerWidth)/4;
   var brakey=window.innerHeight/2;
@@ -34,6 +34,11 @@ function draw() {
     }
     if (keyIsDown(LEFT_ARROW)) {
       me.dir(-.2, 0);
+    }
+
+    if(touchStarted())
+    {
+      print("touch x: "+touch.x);
     }
 
     if (keyIsDown(82) || keyIsDown(114)) { //r for reset
