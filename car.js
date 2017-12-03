@@ -1,7 +1,7 @@
 //utilizing sloppy inverse kinematics
 function Car(r, g, b) {
   this.x = window.innerWidth/2 + track.innerWidth/2 + random(track.outerWidth-track.innerWidth); //arbitrary for now
-  this.y = window.innerWidth/2;
+  this.y = window.innerHeight/2;
   this.radius =(track.outerWidth-track.innerWidth)/(2*4);
 
   //range is 235 -- 310
