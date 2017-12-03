@@ -28,13 +28,12 @@ function touchStarted()
 //left button  ey//gasy+60
 if(gasx+20<pmouseX<(window.innerWidth-(gasx+20)) && gasy+60<pmouseY<gasy-40)
 {
-  print(gasx+20+"  "+pmouseX+"  "+window.innerWidth-gasx+20)
-  print("go right");
+  print("go right "+(window.innerWidth-(gasx+20)));
   me.dir(.2, 0);
 }
-else if(((window.innerWidth-(2*(gasx+20)))<pmouseX<gasx) && gasy+60<pmouseY<gasy-40)
+else if((window.innerWidth-(2*(gasx+20)))<pmouseX<gasx && gasy+60<pmouseY<gasy-40)
 {
-  print("go left");
+  print("go left "+(window.innerWidth-(2*(gasx+20))));
   me.dir(-.2, 0);
 }
 
@@ -47,13 +46,12 @@ function touchMoved()
   var gasy=window.innerHeight/2;
   if(gasx+20<pmouseX<(window.innerWidth-(gasx+20)) && gasy+60<pmouseY<gasy-40)
   {
-    print(gasx+20+"  "+pmouseX+"  "+window.innerWidth-gasx+20)
-    print("go right");
+    print("go right "+(window.innerWidth-(gasx+20)));
     me.dir(.2, 0);
   }
-  else if(((window.innerWidth-(2*(gasx+20)))<pmouseX<gasx) && gasy+60<pmouseY<gasy-40)
+  else if((window.innerWidth-(2*(gasx+20)))<pmouseX<gasx && gasy+60<pmouseY<gasy-40)
   {
-    print("go left");
+    print("go left "+(window.innerWidth-(2*(gasx+20))));
     me.dir(-.2, 0);
   }
 }
