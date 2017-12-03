@@ -12,7 +12,7 @@ function setup() {
 
 function touchStarted()
 {
-  var brakex=(window.innerWidth - track.outerWidth)/4;
+  /*var brakex=(window.innerWidth - track.outerWidth)/4;
   var brakey=window.innerHeight/2;
   var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
   var gasy=window.innerHeight/2;
@@ -24,18 +24,13 @@ function touchStarted()
 //left button  ex//window.innerWidth-gasx+20
 //left button  sx//gasx+20
 //left button  sy//gasy-40
-//left button  ey//gasy+40
-  if(gasx+20<pmouseX<window.innerWidth-(gasx+20) && gasy+60<pmouseY<gasy-40)
-  {
-    print(gasx+20+"  "+pmouseX+"  "+(window.innerWidth-(gasx+20)))
-    print("go right");
-  }
+//left button  ey//gasy+40*/
 
 
 }
 function touchMoved()
 {
-  var brakex=(window.innerWidth - track.outerWidth)/4;
+  /*var brakex=(window.innerWidth - track.outerWidth)/4;
   var brakey=window.innerHeight/2;
   var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
   var gasy=window.innerHeight/2;
@@ -43,7 +38,7 @@ function touchMoved()
   {
     print(gasx+20+"  "+pmouseX+"  "+window.innerWidth-gasx+20)
     print("go right");
-  }
+  }*/
 }
 
 function draw() {
@@ -54,6 +49,15 @@ function draw() {
   var brakey=window.innerHeight/2;
   var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
   var gasy=window.innerHeight/2;
+
+    button1 = createButton('UP');
+    button1.position(gasx-10, gasy-10);
+    button1.mousePressed(me.dir(0, -.2));
+
+    /*button2 = createButton('LEFT');
+    button2.position(gasx-10, gasy-10);
+    button2.mousePressed(me.dir(0, -.2));*/
+
   if (safeMode === false) {
     me.update();
     me.show();
