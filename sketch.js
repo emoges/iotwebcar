@@ -34,6 +34,10 @@ function touchStarted()
 }
 function touchMoved()
 {
+  var brakex=(window.innerWidth - track.outerWidth)/4;
+  var brakey=window.innerHeight/2;
+  var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
+  var gasy=window.innerHeight/2;
   if(gasx+20<mouseX<window.innerWidth-gasx+20 && gasy+60<mouseY<gasy-40)
   {
     print("go right");
