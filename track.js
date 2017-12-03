@@ -1,12 +1,10 @@
 function Track() {
   if (width<height)
   {
-    this.outerWidth = 100;
-    //this.outerWidth = width*.7;
+    this.outerWidth = width*.7;
   }else
   {
-    this.outerWidth = 100;
-    //this.outerWidth = height*.7;
+    this.outerWidth = height*.7;
   }
   this.outerHeight = this.outerWidth
   this.innerWidth = this.outerWidth * .7;
