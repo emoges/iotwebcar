@@ -1,8 +1,3 @@
-var brakex=(window.innerWidth - track.outerWidth)/4;
-var brakey=window.innerHeight/2;
-var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
-var gasy=window.innerHeight/2;
-
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight); //bg
    track = new Track(); //track
@@ -14,6 +9,10 @@ function setup() {
   safeMode = false;
   frameRate(fr);
 }
+var brakex=(window.innerWidth - track.outerWidth)/4;
+var brakey=window.innerHeight/2;
+var gasx=(window.innerWidth - track.outerWidth)/2 +track.outerWidth+(window.innerWidth - track.outerWidth)/4;
+var gasy=window.innerHeight/2;
 
 function touchStarted()
 {
