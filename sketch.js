@@ -30,6 +30,8 @@ function touchStarted()
     print("gasx: "+gasx);
     print("windW: "+window.innerWidth);
     print("pmX: "+pmouseX);
+    print("ttttt:  "+gasx+20);
+    print("ttttt:  "+window.innerWidth-gasx+20);
     print(gasx+20+"  "+pmouseX+"  "+window.innerWidth-gasx+20)
     print("go right");
   }
