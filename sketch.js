@@ -1,7 +1,7 @@
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight); //bg
+   track = new Track(); //track
   me = new Car(255, 255, 255); //car
-  track = new Track(); //track
   brake = loadImage("img/brakev2.png");
   gas = loadImage("img/gasv2.png");
   fr = 30; //frameRate
