@@ -98,7 +98,7 @@ function draw() {
 
   function upp()
   {
-    while button1.mouseIsPressed==true
+    while (button1.mouseIsPressed==true)
     {
       me.dir(0, -.2);
     }
